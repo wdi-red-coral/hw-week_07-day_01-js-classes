@@ -33,6 +33,42 @@ runner.longestDistance() // 30 meters
 
 runner.averageSpeed() // 0.3 meters per second
 ```
+## My solution
+```js
+class RunTracker {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+        this.dates = [];
+        this.distances = [];
+        this.times = [];
+
+    }
+    addRun(dateAndTime, times, distance) {
+        this.dates.push(dateAndTime);
+        this.distances.push(distance);
+        this.times.push(times)
+    }
+    totalDistance() {
+        const sum = this.distances.reduce((acc, curr) => acc + curr)
+        console.log(sum)
+    }
+    longestDistance() {
+        const largest = this.distances.reduce((numLarger, curr) => Math.max(numLarger, curr));
+        console.log(largest)
+    }
+    averageSpeed() {
+        const totalDistance = this.distances.reduce((acc, curr) => acc + curr)
+        const totalTime = this.times.reduce((acc, curr) => acc + curr)
+        const avr = (totalDistance / totalTime)
+        console.log(avr)
+    }
+}
+
+
+```
+
+
 
 
 
