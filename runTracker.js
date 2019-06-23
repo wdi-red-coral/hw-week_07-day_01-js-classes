@@ -17,19 +17,20 @@ class Tracker {
       
       totalDistance () {
           this.distance += this.distance; 
+           return  this.distance; 
       }
 
-      totalTokenTime () {
-        this.timeToken += this.timeToken; 
-    }
+      //totalTokenTime () {
+       // this.timeToken += this.timeToken; 
+   // }
      longestistance (){
     let largest = this.arrDis.reduce((larg, curr)=> Math.max(larg, curr))
     return largest; 
   }  
 
      avgSpeed () {
- let totalTime= this.arrTime.reduce((time, curr)=> time + curr)
- let totalDis= this.arrDis.reduce((dis, curr)=> dis + curr) 
+        totalTime= this.arrTime.reduce((time, curr)=> time + curr)
+        totalDis= this.arrDis.reduce((dis, curr)=> dis + curr) 
 
        return totalDis / totalTime; 
          
