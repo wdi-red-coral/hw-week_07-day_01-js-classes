@@ -1,0 +1,10 @@
+const runner = new Runner("Mike", "mike@mike.com");
+
+runner.addRun("2017-01-01", 10, 30)
+runner.addRun("2017-01-02", 5, 20)
+
+runner.totalDistance()
+
+runner.longestDistance()
+
+runner.averageSpeed() 
