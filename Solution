@@ -1,0 +1,32 @@
+//1
+class User{
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+        this.time = 0;
+        this.distance = 0;
+        this.day = 1;
+        this.month = 1;
+        this.year = 2019;
+    }
+      
+    time(){
+        this.time = this.time + 1
+    }
+    
+    date(){
+    this.day / this.month / this.year;
+    
+        }
+
+    }
+
+    //2
+
+    const run= []
+ const largets = nums.reduce(function(prev,curr){
+    if(prev > curr){
+        return prev;
+    }else{
+        return curr;
+    }
