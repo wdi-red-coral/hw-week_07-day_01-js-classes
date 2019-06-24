@@ -38,3 +38,4 @@ runner.averageSpeed() // 0.3 meters per second
 
 ## Challenge
 - try using `.reduce` for `total distance run` and `average speed`
+ 
